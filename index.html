@@ -1,71 +1,68 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-h1, h2 {
-    margin: 10px 0;
-}
-
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-form {
-    display: grid;
-    gap: 10px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input, select, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
-
-@media (max-width: 600px) {
-    section {
-        padding: 10px;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Lots - Parking Lot Striping, Asphalt, Concrete & Construction in East Texas</title>
+    <meta name="description" content="Professional parking lot striping, asphalt repair, concrete services, and general construction in Kilgore, Longview, Tyler, and East Texas areas within 100 miles. Get a free quote today!">
+    <meta name="keywords" content="parking lot striping Kilgore TX, asphalt repair East Texas, concrete contractors Longview, general construction Tyler TX, striping services near me">
+    <meta name="geo.region" content="US-TX">
+    <meta name="geo.placename" content="Kilgore, Texas">
+    <meta name="geo.position" content="32.3861;-94.8758">
+    <meta name="ICBM" content="32.3861, -94.8758">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pro Lots Striping & Construction</h1>
+        <p>Serving East Texas: Kilgore, Longview, Tyler, Marshall & Beyond (100-Mile Radius)</p>
+    </header>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>Parking Lot Striping</strong>: Crisp, durable lines for lots, ADA compliance, and custom designs.</li>
+            <li><strong>Asphalt Services</strong>: Paving, repairs, sealcoating, and pothole fixes.</li>
+            <li><strong>Concrete Work</strong>: Driveways, sidewalks, foundations, and pours.</li>
+            <li><strong>General Construction</strong>: Remodeling, additions, and site prep in East Texas.</li>
+        </ul>
+        <p>We cover areas within 100 miles of Kilgore, TX, including Shreveport LA, Nacogdoches, Henderson, and more. Quality work at competitive prices.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Get a Free Quote - Organic Leads Welcome!</h2>
+        <form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="location">Your Location (City, TX):</label>
+            <input type="text" id="location" name="location" required placeholder="e.g., Longview, TX">
+            
+            <label for="service">Service Needed:</label>
+            <select id="service" name="service" required>
+                <option value="">Select...</option>
+                <option value="Striping">Parking Lot Striping</option>
+                <option value="Asphalt">Asphalt Repair/Paving</option>
+                <option value="Concrete">Concrete Work</option>
+                <option value="Construction">General Construction</option>
+            </select>
+            
+            <label for="message">Details:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">Submit Lead</button>
+        </form>
+        <p>Leads submitted here go straight to our inbox. We respond within 24 hours for local projects only (100-mile radius).</p>
+    </section>
+    
+    <footer>
+        <p>© 2026 Pro Lots. Kilgore, TX. Call: (903) 475-3581</p>
+    </footer>
+</body>
+</html>
